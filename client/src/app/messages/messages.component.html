@@ -1,0 +1,11 @@
+<p>
+  messages works!
+</p>
+<ol>
+  <li *ngFor="let message of store.messages">{{ message }}</li>
+</ol>
+<div>
+  <input type="text" [(ngModel)]="newMessage"/>
+  <button type="button" (click)="submitNewMessage()">Submit</button>
+</div>
+
